@@ -41,6 +41,30 @@ button {
   cursor: pointer;
 }
 
+.tabs {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.tab-btn {
+  background: #e7ebf7;
+  color: #1d2a6b;
+}
+
+.tab-btn.active {
+  background: #3f51b5;
+  color: white;
+}
+
+.tab-panel {
+  display: none;
+}
+
+.tab-panel.active {
+  display: block;
+}
+
 ul {
   list-style: none;
   margin: 0;
@@ -57,5 +81,19 @@ li {
 
 .learned {
   text-decoration: line-through;
+  color: #666;
+}
+
+.status-pill {
+  background: #eef2ff;
+  color: #2f3b90;
+  border-radius: 999px;
+  padding: 4px 10px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.empty-state {
+  justify-content: center;
   color: #666;
 }

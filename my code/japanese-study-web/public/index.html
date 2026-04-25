@@ -24,8 +24,17 @@
       </section>
 
       <section class="card">
-        <h2>Vocabulary List</h2>
-        <ul id="vocab-list"></ul>
+        <h2>Vocabulary</h2>
+        <div class="tabs" role="tablist" aria-label="Vocabulary tabs">
+          <button type="button" class="tab-btn active" data-tab="vocab-list-panel" aria-selected="true">Vocabulary List</button>
+          <button type="button" class="tab-btn" data-tab="added-items-panel" aria-selected="false">Added Items</button>
+        </div>
+        <div id="vocab-list-panel" class="tab-panel active" role="tabpanel">
+          <ul id="vocab-list"></ul>
+        </div>
+        <div id="added-items-panel" class="tab-panel" role="tabpanel" aria-hidden="true">
+          <ul id="added-items-list"></ul>
+        </div>
       </section>
     </main>
 
